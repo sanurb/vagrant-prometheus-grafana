@@ -1,3 +1,53 @@
+# Prometheus and Grafana Configuration Guide
+
+This README provides an overview of the key configuration paths and settings for Prometheus and Grafana, based on the installation on an Ubuntu system. For detailed installation instructions, please refer to the [Linode Guide](https://www.linode.com/docs/guides/how-to-install-prometheus-and-grafana-on-ubuntu/).
+
+## Prometheus Configuration
+
+### Key Configuration Paths
+
+- **Prometheus Configuration File**: `/etc/prometheus/prometheus.yml`
+  - This YAML file contains the main configuration for Prometheus.
+- **Prometheus Data Directory**: `/var/lib/prometheus`
+  - This directory stores Prometheus application data.
+- **Prometheus Executable**: `/usr/local/bin/prometheus`
+  - The location of the Prometheus executable file.
+- **Prometheus Service File**: `/etc/systemd/system/prometheus.service`
+  - This file is used to configure Prometheus as a service.
+
+### Overview
+
+Prometheus is an open-source system monitoring application that collects server metrics at regular intervals. It is configured to monitor itself by default, and additional client nodes can be added for monitoring.
+
+## Grafana Configuration
+
+### Key Configuration Paths
+
+- **Grafana Web Interface**: Accessed on port `3000` of the host server.
+- **Grafana Dashboards**: Integrated within the Grafana UI.
+  - Dashboards can be imported or created for various data visualizations.
+
+### Overview
+
+Grafana is a visualization tool that displays metrics collected by Prometheus in a user-friendly dashboard format. It does not collect or store data itself but provides an intuitive interface for data presentation.
+
+## Node Exporter
+
+- **Node Exporter Installation**: Installed on each client node.
+- **Default Port**: `9100`
+  - Node Exporter listens on this port for Prometheus to collect metrics.
+
+### Overview
+
+Node Exporter is a Prometheus component that collects hardware and OS metrics from the client nodes. It is essential for Prometheus to gather detailed statistics about each node.
+
+## Additional Notes
+
+- Ensure both Prometheus and Grafana are running on the same server for optimal performance.
+- Customize the Prometheus and Grafana configurations as per your monitoring requirements.
+- Refer to the official documentation for advanced configurations and troubleshooting.
+
+
 # vagrant-prometheus-grafana
 
 
