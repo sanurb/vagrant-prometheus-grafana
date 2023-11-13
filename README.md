@@ -47,15 +47,11 @@ Node Exporter is a Prometheus component that collects hardware and OS metrics fr
 - Customize the Prometheus and Grafana configurations as per your monitoring requirements.
 - Refer to the official documentation for advanced configurations and troubleshooting.
 
-
-# vagrant-prometheus-grafana
-
-
 ## Metric exploration
 
 ### 1. CPU usage per Core
 
-Esta consulta proporciona el uso de la CPU desglosado por core, lo que es útil para identificar desequilibrios en la carga entre cores.
+This query provides CPU usage broken down by core, which is useful for identifying load imbalances between cores.
 
 ```promql
 100 - (avg by (cpu) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
