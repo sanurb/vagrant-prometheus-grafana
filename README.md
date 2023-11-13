@@ -1,3 +1,6 @@
+
+![WhatsApp Image 2023-11-13 at 11 23 20 AM](https://github.com/sanurb/vagrant-prometheus-grafana/assets/80982045/8e75a35f-23ca-47fc-a5af-61a4fb55b58b)
+
 # Prometheus and Grafana Configuration Guide
 
 This README provides an overview of the key configuration paths and settings for Prometheus and Grafana, based on the installation on an Ubuntu system. For detailed installation instructions, please refer to the [Linode Guide](https://www.linode.com/docs/guides/how-to-install-prometheus-and-grafana-on-ubuntu/).
@@ -96,3 +99,7 @@ node_load1
 node_load5
 node_load15
 ```
+### Fuentes: 
+
+https://prometheus.io/docs/introduction/overview/
+https://grafana.com/docs/grafana/latest/
