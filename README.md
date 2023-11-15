@@ -4,6 +4,9 @@
 
 This README provides an overview of the key configuration paths and settings for Prometheus and Grafana, based on the installation on an Ubuntu system. For detailed installation instructions, please refer to the [Linode Guide](https://www.linode.com/docs/guides/how-to-install-prometheus-and-grafana-on-ubuntu/).
 
+you can download the machine already configured with vagrant:
+- Download from: [vagrant cloud](https://app.vagrantup.com/davidurbano/boxes/prometheus-grafana)
+
 ## Table of Contents
 
 - [Prometheus Configuration](#prometheus-configuration)
